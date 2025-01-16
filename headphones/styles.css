@@ -1,0 +1,450 @@
+:root {
+    --primary-color: rgba(255, 101, 101, 1);
+    --white-color: rgba(255, 255, 255, 1);
+    --hover-color: #FF6565;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    height: 80px;
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 32px;
+    width: 161px;
+}
+
+nav ul {
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 0.7rem;
+    line-height: auto;
+    font-weight: bold;
+}
+.menu-icon {
+    display: none;  /* Initially hide it */
+    cursor: pointer; /* Make it clickable */
+    font-size: 24px; /* Icon size */
+    color: #000; /* Change color of the icon */
+}
+
+.first-section {
+    background-image: url("/headphones/images/headphones_hero_1.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: -80px;
+    padding: 0px 10%;
+    padding-top: 350px;
+    text-align: center;
+}
+
+.first-section .centeredtitle {
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+.first-section .centeredtitle h3 {
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: auto;
+}
+
+.first-section .centeredtitle h5 {
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: auto;
+}
+
+.first-section button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    height: 44px;
+    width: 162px;
+    border-radius: 22px;
+    border-style: none;
+    cursor: pointer;
+    margin-bottom: 6%;
+}
+
+.first-section button:hover {
+    background-color: var(--hover-color);
+    opacity: 0.9;
+}
+
+.first-section p {
+    max-width: 637px;
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    padding-bottom: 8%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.second-section {
+    padding-top: 140px;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    text-align: center;
+}
+
+.second-section .content p {
+    margin: 0 auto;
+    max-width: 637px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 26px;
+}
+
+.second-section .items {
+    display: flex;
+    max-width: 1002px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    gap: 20px;
+}
+
+.second-section .items .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    max-width: 207px;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.second-section .items .item img {
+    max-width: 94.2px;
+}
+
+.second-section .items .item p {
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgba(7, 22, 41, 1);
+    padding-top: 40px;
+}
+.third-section{
+    padding: 0px 10%;
+    background-image: url(/headphones/images/headphones_hero_2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+.third-section .content p{
+    max-width: 637px; 
+    margin: 0 auto;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    padding-top: 20%;
+}
+.third-section ul{
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding-top: 7%;
+    justify-content: space-between;
+    max-width: 1005px;
+}
+.third-section ul li{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15%;
+}
+.third-section ul li img{
+    width: 190px;
+}
+.third-section ul li .text-item{
+    margin-top: -115px;
+    align-items: center;
+    text-align: center;
+}
+.third-section ul li .text-item h2{
+    color: white;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 26px;
+}
+.third-section ul li .text-item p{
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+}
+.fourth-section{
+    padding-top: 13%;
+    padding-right: 10%;
+    padding-bottom: 7%;
+    padding-left: 10%;
+    text-align: center;
+}
+.fourth-section .lines-input {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 355px;
+    margin: 0 auto;
+}
+
+.fourth-section .lines-input input {
+    border: none; 
+    border-bottom: 1px solid rgba(151, 151, 151, 1); 
+    outline: none; 
+    padding: 8px 0; 
+    font-size: 16px; 
+}
+
+.fourth-section .lines-input input:focus {
+    border-bottom: 2px solid var(--primary-color); 
+    transition: border-color 0.3s ease;
+}
+
+.fourth-section .content button{
+    margin-top: 50px;
+    border-radius: 22px;
+    background-color: var(--primary-color);
+    width: 162px;
+    align-items: center;
+    height: 44px; ;
+    border-style: none;
+    color: white;
+    font-size:14px ;
+    font-weight:bold ;
+    cursor: pointer;
+}
+.fourth-section button:hover {
+    background-color: var(--hover-color);
+    opacity: 0.9;
+}
+footer{
+    background-color:rgba(7, 22, 41, 1) ;
+    padding-top: 4%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+}
+footer .logoandsocial{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+footer .logoandsocial img{
+    max-width: 161px;
+    height: 32px;
+}
+footer .logoandsocial .icons{
+    display: flex;
+    max-width: 130px;
+    gap: 20px;
+}
+footer .logoandsocial .icons .icon {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin: auto;
+}
+footer .logoandsocial .icons .icon i {
+    display: inline-block; 
+    font-size: 16px; 
+    color: rgba(7, 22, 41, 1); 
+}
+footer p{
+    color: rgba(255, 255, 255, 1);
+}
+footer .hiddenicon{
+    display: none;
+}
+@media (max-width: 768px) {
+    .first-section {
+       width: 100%;
+       padding: 0px 5%; /* Adjust the padding for smaller screens */
+       padding-top: 200px;
+    } 
+
+    .second-section .items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        max-width: 472px;
+        align-items: center;    
+        gap: 20px;
+    }
+    .third-section{
+        width: 100%;
+    }
+    .third-section ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 472px;
+        align-items: center;
+        gap: 70px;
+        padding-bottom: 50px;
+    }
+    .third-section ul li .text-item{
+        margin-top: -115px;      
+        text-align: center;
+    }
+}
+@media (max-width: 484px) {
+    .first-section {
+        width: 100%;
+        padding-top: 250px; 
+        text-align: center;
+    }
+    .first-section .centeredtitle h3{
+        max-width:375px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+
+    }
+    .first-section .centeredtitle h5{
+        max-width:297px;
+        margin: 0 auto;
+        padding: 10px 10px;
+    }
+    .first-section button {
+        margin-bottom: 80px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        display: none;
+    }
+     .menu-icon {
+        display: block;
+        cursor: pointer; /* Make it clickable */
+        font-size: 24px; /* Icon size */
+        color: #fff; /* Adjust icon color */
+    }
+
+    /* Optionally, you can adjust the positioning of the menu icon if needed */
+    nav {
+        position: relative;
+    }
+    .second-section .content p {
+        max-width: 325px;
+        font-size:16px
+    }
+    .second-section .items {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        max-width: 100%;  /* Full width */
+        align-items: center;
+        gap: 20px;
+        max-width: 207px;
+    }
+
+    .third-section {
+        width: 100%;
+    }
+    .third-section p{
+        max-width: 305px;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    }
+
+    .third-section ul {
+        display: grid;
+        grid-template-columns: 1fr;  /* Single column for smaller screens */
+        max-width: 190px;  /* Full width */
+        align-items: center;
+        gap: 20px;  /* Reduced gap for smaller screens */
+        padding-bottom: 30px;  /* Adjust padding */
+    }
+
+    .third-section ul li .text-item {
+        margin-top: -115px;  /* Adjust margin for smaller screens */
+        text-align: center;
+    }
+    .fourth-section .lines-input{
+        padding-top: 150px;
+    }
+    .fourth-section .content button{
+        margin-top: 60px;
+        margin-bottom: 120px;
+    }
+    footer {
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        position: relative;
+    }
+    footer .logoandsocial .shownicon{
+      display: none;
+    }
+    footer .hiddenicon{
+        display: block;
+        position: absolute;
+        left: 30%;
+        height:32px ;
+        top: 20px;
+    }
+    footer .logoandsocial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Align items properly */
+        gap: 50px; /* Adds spacing between logo and social icons */
+        width: 100%; /* Ensure it spans the width of the footer */
+        align-items: center;
+    }
+    
+    footer .logoandsocial .icons {
+        display: flex;
+        gap: 15px; /* Add space between individual icons */
+        justify-content: center;
+    }
+    
+    footer .logoandsocial .icons .icon {
+        background-color: white;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Center icon inside the circle */
+    }
+    footer p{
+        padding-top: 50px;
+    }
+    
+}
